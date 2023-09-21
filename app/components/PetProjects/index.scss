@@ -1,0 +1,52 @@
+.dh-pet-projects {
+    @apply relative;
+
+    &__list {
+        @apply flex gap-3 flex-col lg:w-[80%] lg:mx-auto;
+    }
+
+    &__icon {
+        @apply absolute bottom-16 right-0 w-[150px] h-[150px] hidden lg:flex;
+    }
+
+    &__bg-icon {
+        @apply absolute top-36 left-0 w-[75px] h-[124px] hidden lg:flex;
+
+        & > svg {
+            @apply w-full h-full;
+        }
+    }
+}
+
+.dh-card-panel {
+    @apply flex py-3 box-border px-6 bg-secondary-2 min-h-[80px] sm:flex-row sm:items-center shadow-md rounded-lg
+    gap-3 flex-col items-start;
+
+    &__details {
+        @apply flex gap-4 items-center;
+
+        & > svg {
+            @apply w-10 h-10;
+        }
+    }
+
+    &__title {
+        @apply font-semibold text-[#000];
+    }
+
+    .dh-technology-list__item {
+        @apply bg-[transparent] text-[#000] border border-solid border-[#000];
+    }
+
+    &__links {
+        @apply flex gap-3 items-center ml-auto min-w-[60px] justify-end;
+
+        a:first-child {
+            @apply text-label-dark;
+        }
+
+        svg {
+            @apply w-6 h-6;
+        }
+    }
+}

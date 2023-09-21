@@ -1,0 +1,31 @@
+.dh-skills {
+    &-grid {
+        @apply flex gap-6 flex-wrap w-full;
+
+        &__item {
+            @apply bg-gray-lightest2 py-3 px-4 items-center flex flex-col gap-2 box-border
+            rounded-lg min-w-[135px] shadow-md;
+            flex-grow: 1;
+
+            svg {
+                @apply w-6 h-6;
+            }
+
+            &-title {
+                @apply text-label-dark font-medium text-xl;
+            }
+        }
+    }
+
+    .dh-block-line {
+        @apply top-[100px];
+
+        &::after {
+            @apply top-0;
+        }
+
+        &::before {
+            @apply top-4;
+        }
+    }
+}

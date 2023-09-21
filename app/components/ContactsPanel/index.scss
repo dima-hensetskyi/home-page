@@ -1,0 +1,19 @@
+.dh-contacts-panel {
+    @apply flex gap-5 lg:gap-4 items-center;
+
+    & > a > svg {
+        @apply w-8 h-8 lg:w-6 lg:h-6;
+    }
+
+    &__email > svg {
+        @apply text-[red];
+    }
+
+    &__telegram > svg {
+        @apply text-blue;
+    }
+
+    &__linkedin > svg {
+        @apply text-[#0077b5];
+    }
+}

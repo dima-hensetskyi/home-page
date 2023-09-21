@@ -1,0 +1,16 @@
+.dh-education {
+    @apply border-y-0;
+
+    &__list {
+        @apply gap-6 lg:gap-8 grid lg:grid-cols-2 xl:grid-cols-4;
+
+        & > a {
+            @apply flex;
+            flex-grow: 1;
+        }
+
+        & > a > div {
+            @apply flex-1;
+        }
+    }
+}

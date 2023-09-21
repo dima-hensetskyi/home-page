@@ -1,0 +1,8 @@
+.dh-body-aside {
+    @apply absolute w-[1px];
+    @apply top-[calc(100vh+52px)] md:top-[calc(100vh+62px)] lg:top-[calc(100vh+104px)] left-3 md:left-[5.8vw] z-[9] bottom-0;
+
+    .dh-body-aside-line {
+        @apply bg-label-dark absolute w-[1px] top-0 left-0;
+    }
+}

@@ -1,0 +1,30 @@
+.dh-promo-hero {
+    @apply min-h-[calc(100vh-45px)] lg:min-h-[calc(100vh-64px)] flex mr-0 lg:flex-row flex-col;
+
+    &__content {
+        @apply flex ml-5 md:ml-[7.5vw] flex-col gap-6 my-6 md:my-[5vh]
+        lg:my-[10vh] pr-5 lg:pr-12 xl:min-w-fit lg:max-w-[30%] xl:max-w-none;
+
+        .dh-promo-hero-content__subtitle {
+            @apply md:text-2xl text-label-gray;
+        }
+
+        .dh-promo-hero-content__title {
+            @apply text-2xl sm:text-4xl text-label-dark font-bold;
+        }
+    }
+
+    a {
+        @apply w-fit;
+    }
+
+    &__cta {
+        @apply bg-blue-light flex-1 flex min-h-[40vh];
+    }
+
+    &__illustration {
+        background: url('../../../public/developer.svg') no-repeat center top;
+        background-size: contain;
+        @apply flex-1;
+    }
+}

@@ -1,0 +1,77 @@
+.dh-experience {
+    @apply ml-[7.5vw] border-b-0 max-w-[calc(92.5vw)];
+    @apply pb-0 #{!important};
+
+    &-list {
+        @apply bg-secondary-2 w-screen min-h-screen -ml-[calc(7.5vw+24px)] py-8 lg:py-16
+        gap-8 flex flex-col;
+
+        .dh-experience-item {
+            @apply flex flex-col gap-6;
+
+            &:nth-child(odd) {
+                .dh-expr-card-image {
+                    @apply xl:order-2 xl:rounded-l-none xl:rounded-r-lg;
+                }
+
+                .dh-expr-card__body {
+                    @apply xl:order-1 xl:rounded-r-none xl:rounded-l-lg;
+                }
+            }
+
+            &__details {
+                @apply flex items-center gap-4;
+
+                & > svg {
+                    @apply h-8;
+                }
+            }
+
+            &__title {
+                @apply text-label-dark text-2xl;
+            }
+
+            &__subtitle {
+                @apply text-[#79819A] font-normal text-sm mt-auto;
+            }
+        }
+    }
+}
+
+.dh-expr-card-wrapper {
+    @apply w-full;
+
+    .dh-expr-card {
+        @apply flex box-border min-h-[300px] lg:min-h-[450px] shadow-lg flex-col xl:flex-row
+        rounded-lg;
+
+        &__body {
+            @apply flex p-5 bg-[#ffffff] box-border flex-1
+            flex-col gap-4 rounded-lg rounded-t-none xl:rounded-l-none xl:rounded-tr-lg;
+        }
+
+        .dh-expr-card-image {
+            @apply xl:w-[60%] rounded-lg rounded-b-none xl:rounded-r-none xl:rounded-b-lg;
+        }
+
+        .dh-experience-responsibilities-list {
+            @apply flex flex-col gap-1;
+
+            & > li {
+                @apply text-sm flex gap-2;
+
+                svg {
+                    @apply min-w-[14px] min-h-[14px] mt-[2px];
+                }
+            }
+        }
+    }
+}
+
+.dh-technology-list {
+    @apply flex flex-wrap gap-2;
+
+    &__item {
+        @apply bg-label-gray-100 text-sm py-1 px-2 rounded-md;
+    }
+}

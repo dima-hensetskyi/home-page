@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dh-block {
+    @apply px-6 md:px-0 md:max-w-[85%] md:mx-auto w-full relative;
+}
+
+.dh-block--with-line {
+    @apply border border-solid border-t-0 border-x-0 border-label-gray-100;
+}
+
+.dh-section {
+    @extend .dh-block;
+    @extend .dh-block--with-line;
+    @apply pl-6 py-8 md:py-12 lg:py-24 box-border border-b flex flex-col gap-6;
+}
+
+.dh-btn {
+    @apply rounded-md px-6 py-3 text-[#fff] font-semibold w-fit hover:opacity-90 active:opacity-95
+    bg-label-dark;
+}
+
+.dh-body {
+    @apply flex flex-col relative;
+
+    .dh-main {
+        @apply flex flex-col mt-[45px] lg:mt-16;
+    }
+}
+
+.dh-block-title {
+    @apply text-xl md:text-2xl text-label-dark font-medium;
+}
+
+.dh-block-line-dot {
+    @apply absolute md:-left-[1.63vw] left-3 z-[9] top-0;
+
+    &::after {
+        content: '';
+        @apply w-4 h-4 md:w-8 md:h-8 bg-[#ffffff] absolute top-10 md:top-12 lg:top-24 right-1/2 translate-x-1/2 rounded-full;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04) inset,
+            0px 6px 24px 0px rgba(0, 0, 0, 0.04),
+            0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &::before {
+        content: '';
+        @apply w-2 h-2 md:w-3 md:h-3 absolute top-12 md:top-16 lg:top-28 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-full bg-label-dark z-[2];
+    }
+}

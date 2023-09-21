@@ -1,0 +1,32 @@
+.dh-header {
+    @apply flex fixed flex-1 box-border left-0 right-0 z-10 bg-[#ffffff] min-h-[45px];
+    // ml-[20%];
+
+    .dh-header-nav {
+        @apply flex justify-end w-full px-0 md:px-4 py-5 items-center;
+
+        &__list {
+            @apply list-none gap-4 md:gap-8 flex md:flex-row flex-col h-0 md:h-fit overflow-hidden bg-[#ffffff]
+            flex-1 absolute md:static left-0 right-0 top-[45px] transition-all duration-300 ease-out
+            z-[9] md:px-0 items-end md:border-none md:justify-end;
+
+            & > li {
+                @apply text-label-gray hover:opacity-70 text-base active:text-label-dark visited:text-gradient-primary;
+            }
+        }
+    }
+
+    &-menu-btn {
+        @apply md:hidden absolute right-[7.5vw] top-2 z-10 bg-gray-lightest2 p-1 rounded-full;
+
+        svg {
+            @apply w-5 h-5 text-label-dark;
+        }
+    }
+
+    &--menu-open {
+        .dh-header-nav__list {
+            @apply h-auto p-5;
+        }
+    }
+}

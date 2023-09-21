@@ -1,0 +1,23 @@
+.dh-contact {
+    @apply min-h-screen;
+    @apply pb-0 border-b-0 #{!important};
+
+    &-content {
+        @apply flex flex-1 flex-col md:flex-row;
+
+        &__details {
+            @apply md:pl-12 my-6 md:my-[5vh] lg:my-[10vh] flex flex-col gap-4 md:max-w-[45%];
+
+            .dh-contact-title {
+                @apply text-2xl sm:text-4xl text-label-dark font-bold;
+            }
+        }
+
+        &__cta {
+            @apply flex-1 min-h-[40vh];
+            background: url('../../../public/developer4.svg') no-repeat;
+            background-size: contain;
+            background-position: bottom right;
+        }
+    }
+}
