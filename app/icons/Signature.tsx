@@ -17,7 +17,6 @@ export const Signature = () => {
         strokeWidth: 3.3,
         strokeDasharray: '0 1',
         fill: 'none',
-        ['strokeLinejoin']: 'miter',
     };
 
     return (

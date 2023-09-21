@@ -5,7 +5,7 @@ import { m, useScroll, useTransform } from 'framer-motion';
 import { TiPointOfInterest } from 'react-icons/ti';
 
 type ExperienceCardPropsType = {
-    imageSrc: any;
+    imageSrc: string;
     title: string;
     subtitle: string;
     technologies: string[];
