@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import cx from 'classnames';
+import { MdMenu } from 'react-icons/md';
 
 import './index.scss';
-import { MdMenu } from 'react-icons/md';
 
 export const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,7 +18,13 @@ export const Header = () => {
                 <MdMenu />
             </div>
             <nav className="dh-header-nav dh-block dh-block--with-line">
-                <ul className="dh-header-nav__list">
+                <ul
+                    onClick={(evt: any) => {
+                        console.log('here', evt.target?.tagName, evt.target);
+                        if (evt.target?.tagName === 'A') setIsNavOpen(false);
+                    }}
+                    className="dh-header-nav__list"
+                >
                     <li>
                         <a href="#skills">Skills</a>
                     </li>

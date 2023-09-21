@@ -45,7 +45,7 @@ export const ExperienceCard: React.FC<ExperienceCardPropsType> = ({
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{
                     duration: 0.8,
-                    ease: [0, 0.71, 0.2, 1.01],
+                    // ease: [0, 0.71, 0.2, 1.01],
                 }}
             >
                 <Image
@@ -54,7 +54,7 @@ export const ExperienceCard: React.FC<ExperienceCardPropsType> = ({
                     alt={`${title} example`}
                 />
                 <div className="dh-expr-card__body">
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col">
                         <h4 className="dh-experience-item__title">{title}</h4>
                         <h6 className="dh-experience-item__subtitle">
                             {subtitle}

@@ -2,6 +2,14 @@
     @apply ml-[7.5vw] border-b-0 max-w-[calc(92.5vw)];
     @apply pb-0 #{!important};
 
+    .dh-block-line-dot {
+        @apply -left-[calc(7.5vw-13px)] md:-left-[1.63vw] #{!important};
+    }
+
+    .dh-block-title {
+        @apply -ml-[7.5vw] md:ml-0;
+    }
+
     &-list {
         @apply bg-secondary-2 w-screen min-h-screen -ml-[calc(7.5vw+24px)] py-8 lg:py-16
         gap-8 flex flex-col;
