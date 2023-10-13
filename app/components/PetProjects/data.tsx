@@ -1,9 +1,17 @@
 import { PiStudentFill } from 'react-icons/pi';
+import { CiMemoPad } from 'react-icons/ci';
 import { GrRss } from 'react-icons/gr';
 import { MdOutlineDatasetLinked } from 'react-icons/md';
 import { TbAirConditioning } from 'react-icons/tb';
 
 export const petProjects = [
+    {
+        title: 'Memory (Card Game)',
+        icon: <CiMemoPad />,
+        technologies: ['JavaScript'],
+        github: 'https://github.com/dima-hensetskyi/memory-card-game',
+        demo: 'https://dima-hensetskyi.github.io/memory-card-game',
+    },
     {
         title: 'RSS Feed Reader',
         icon: <GrRss />,
@@ -14,7 +22,13 @@ export const petProjects = [
     {
         title: 'URL Shortener',
         icon: <MdOutlineDatasetLinked />,
-        technologies: ['React.js', 'Redux', 'Express.js', 'Mongoose', 'Node.js'],
+        technologies: [
+            'React.js',
+            'Redux',
+            'Express.js',
+            'Mongoose',
+            'Node.js',
+        ],
         github: 'https://github.com/dima-hensetskyi/url-shortener',
     },
     {

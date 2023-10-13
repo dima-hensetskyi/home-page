@@ -7,7 +7,7 @@ import './index.scss';
 
 const Contact = () => {
     return (
-        <div id="contact" className="dh-contact dh-section">
+        <section id="contact" className="dh-contact dh-section">
             <div className="dh-block-line-dot" />
             <h3 className="dh-block-title">Contact</h3>
             <div className="dh-contact-content">
@@ -25,7 +25,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

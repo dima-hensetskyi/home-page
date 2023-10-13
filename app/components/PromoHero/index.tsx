@@ -11,7 +11,7 @@ export const PromoHero = () => {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
 
     return (
-        <div className="dh-promo-hero">
+        <section className="dh-promo-hero">
             <div className="dh-promo-hero__content dh-promo-hero-content">
                 <h4 className="dh-promo-hero-content__subtitle">
                     Hi, my name is Dima
@@ -32,6 +32,6 @@ export const PromoHero = () => {
                     className="dh-promo-hero__illustration"
                 />
             </div>
-        </div>
+        </section>
     );
 };

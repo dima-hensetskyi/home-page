@@ -12,12 +12,12 @@ import {
     SiMaterialdesign,
     SiAntdesign,
     SiAxios,
-    SiRollupdotjs
+    SiRollupdotjs,
 } from 'react-icons/si';
 
 export const skills = [
     {
-        title: 'React JS',
+        title: 'React',
         icon: <FaReact />,
     },
     {
@@ -29,7 +29,7 @@ export const skills = [
         icon: <SiTypescript />,
     },
     {
-        title: 'Next JS',
+        title: 'Next.js',
         icon: <SiNextdotjs />,
     },
     {

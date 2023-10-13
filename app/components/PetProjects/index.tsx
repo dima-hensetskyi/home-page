@@ -10,7 +10,7 @@ import './index.scss';
 
 const PetProjects = () => {
     return (
-        <div className="dh-pet-projects dh-section" id="pet-projects">
+        <section className="dh-pet-projects dh-section" id="pet-projects">
             <div className="dh-pet-projects__bg-icon">
                 <Background />
             </div>
@@ -69,7 +69,7 @@ const PetProjects = () => {
             >
                 <Plant />
             </m.div>
-        </div>
+        </section>
     );
 };
 

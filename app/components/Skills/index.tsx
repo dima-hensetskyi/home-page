@@ -7,7 +7,7 @@ import './index.scss';
 
 const Skills = () => {
     return (
-        <div className="dh-skills dh-section" id="skills">
+        <section className="dh-skills dh-section" id="skills">
             <div className="dh-block-line-dot" />
             <h3 className="dh-block-title">Skills</h3>
             <m.div
@@ -40,7 +40,7 @@ const Skills = () => {
                     </m.div>
                 ))}
             </m.div>
-        </div>
+        </section>
     );
 };
 
