@@ -27,7 +27,7 @@ export const ContactsPanel = () => {
                 className="dh-contacts-panel__linkedin"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/dmytro-hensetskyi-0a229a206"
+                href="https://www.linkedin.com/in/dima-hensetskyi-0a229a206"
             >
                 <GrLinkedin />
             </a>
