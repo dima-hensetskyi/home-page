@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
-import { m, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 import { TiPointOfInterest } from 'react-icons/ti';
 
@@ -35,17 +35,16 @@ export const ExperienceCard: React.FC<ExperienceCardPropsType> = ({
 
     return (
         <div className="dh-expr-card-wrapper" ref={ref}>
-            <m.div
+            <motion.div
                 className="dh-expr-card"
                 style={{
                     translateY,
                 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                initial={{ opacity: 0.7, scale: 0.5 }}
-                viewport={{ once: true, amount: 0.5 }}
+                initial={{ opacity: 0.7, scale: 0.8 }}
+                viewport={{ once: true, amount: 0.2 }}
                 transition={{
                     duration: 0.8,
-                    // ease: [0, 0.71, 0.2, 1.01],
                 }}
             >
                 <Image
@@ -79,7 +78,7 @@ export const ExperienceCard: React.FC<ExperienceCardPropsType> = ({
                         ))}
                     </div>
                 </div>
-            </m.div>
+            </motion.div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
+'use client';
 import React from 'react';
-import { m } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { skills } from './data';
 
@@ -10,7 +11,7 @@ const Skills = () => {
         <section className="dh-skills dh-section" id="skills">
             <div className="dh-block-line-dot" />
             <h3 className="dh-block-title">Skills</h3>
-            <m.div
+            <motion.div
                 animate={{ '--base-hue': 360 } as any}
                 initial={{ '--base-hue': 0 } as any}
                 transition={{
@@ -22,7 +23,7 @@ const Skills = () => {
                 className="dh-skills-grid"
             >
                 {skills.map((skill, idx) => (
-                    <m.div
+                    <motion.div
                         className="dh-skills-grid__item"
                         key={skill.title}
                         style={{
@@ -37,9 +38,9 @@ const Skills = () => {
                         <h6 className="dh-skills-grid__item-title">
                             {skill.title}
                         </h6>
-                    </m.div>
+                    </motion.div>
                 ))}
-            </m.div>
+            </motion.div>
         </section>
     );
 };

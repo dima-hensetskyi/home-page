@@ -1,0 +1,67 @@
+.noma-slider-wrapper {
+    @apply relative;
+}
+
+.noma-slider {
+    // @apply mb-16 mt-6 sm:mb-0 sm:mt-6 xl:mt-8;
+
+    &-header {
+        @apply sm:min-h-[40px] xl:min-h-[40px] grid sm:grid-cols-2 2lg:grid-cols-3 items-center;
+    }
+
+    &-title {
+        // @extend .font-medium-heading3;
+        @apply m-0 text-label-secondary text-lg leading-[24.59px] lg:text-xl lg:leading-[27.32px];
+    }
+
+    .slick-list {
+        @apply p-0 -mr-4 -ml-[6px] pr-4 sm:m-0 sm:p-0 sm:-ml-2 sm:-mr-2 2md:-ml-[10px] 2md:-mr-[10px] #{!important};
+    }
+
+    .slick-track {
+        @apply flex;
+    }
+
+    .slick-slide {
+        @apply box-border px-1 sm:px-2 2md:px-[10px];
+    }
+
+    .slick-arrow {
+        @apply absolute right-0 top-auto -bottom-[86px] sm:bottom-auto sm:-top-[44px] xl:-top-[50px] w-10 h-10
+            z-10 rounded-full items-center justify-center focus:bg-systemBlue-2;
+        @apply hidden #{!important};
+
+        &.slick-prev {
+            @apply left-auto right-12;
+        }
+
+        &::before {
+            content: none;
+            @apply flex;
+        }
+    }
+}
+
+.slider-gallery__dots {
+    @apply absolute bottom-4 left-4 gap-2 m-0 p-0;
+    @apply hidden sm:flex items-center #{!important};
+
+    li {
+        @apply list-none flex items-center justify-center relative hover:cursor-pointer;
+
+        button {
+            text-indent: -9999px;
+            @apply bg-label-dark rounded-full border-none shadow-none p-0 hover:cursor-pointer;
+            @apply w-2 h-2 #{!important};
+        }
+
+        &.slick-active {
+            @apply w-6 h-6;
+
+            &:after {
+                content: '';
+                @apply absolute w-6 h-6 inset-0 rounded-full box-border border-label-dark border-solid;
+            }
+        }
+    }
+}

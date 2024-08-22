@@ -6,6 +6,8 @@ import { Header } from './components/Header';
 import { Aside } from './components/Aside';
 
 import './styles/globals.scss';
+// import '~slick-carousel/slick/slick.css';
+// import '~slick-carousel/slick/slick-theme.css';
 
 const dmSans = DM_Sans({
     subsets: ['latin'],

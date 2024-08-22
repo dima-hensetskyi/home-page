@@ -4,7 +4,7 @@
 
         &__item {
             @apply bg-gray-lightest2 py-3 px-4 items-center flex flex-col gap-2 box-border
-            rounded-lg min-w-[135px] shadow-md;
+            rounded-lg min-w-[135px] shadow-md max-w-[190px];
             flex-grow: 1;
 
             svg {

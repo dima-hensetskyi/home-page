@@ -13,7 +13,9 @@ import {
     SiAntdesign,
     SiAxios,
     SiRollupdotjs,
+    SiRecoil,
 } from 'react-icons/si';
+import { GiPolarBear } from 'react-icons/gi';
 
 export const skills = [
     {
@@ -71,5 +73,13 @@ export const skills = [
     {
         title: 'Rollup',
         icon: <SiRollupdotjs />,
+    },
+    {
+        title: 'Zustand',
+        icon: <GiPolarBear />,
+    },
+    {
+        title: 'Recoil',
+        icon: <SiRecoil />,
     },
 ];

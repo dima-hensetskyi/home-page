@@ -4,5 +4,14 @@ import Education from './Education';
 import Skills from './Skills';
 import PetProjects from './PetProjects';
 import Contact from './Contact';
+import { Certifications } from './Certifications';
 
-export { Experience, PromoHero, Education, Skills, PetProjects, Contact };
+export {
+    Experience,
+    PromoHero,
+    Education,
+    Skills,
+    PetProjects,
+    Contact,
+    Certifications,
+};

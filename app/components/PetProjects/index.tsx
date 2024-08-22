@@ -1,10 +1,10 @@
 import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { RiPagesFill } from 'react-icons/ri';
-import { m } from 'framer-motion';
 
+import { AnimatedPlant } from './AnimatedPlant';
+import { Background } from '@/app/icons';
 import { petProjects } from './data';
-import { Background, Plant } from '@/app/icons';
 
 import './index.scss';
 
@@ -58,17 +58,7 @@ const PetProjects = () => {
                     </div>
                 ))}
             </div>
-            <m.div
-                transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                }}
-                initial={{ translateY: '0%' }}
-                whileInView={{ translateY: ['0%', '-8%', '0%'] }}
-                className="dh-pet-projects__icon"
-            >
-                <Plant />
-            </m.div>
+            <AnimatedPlant />
         </section>
     );
 };

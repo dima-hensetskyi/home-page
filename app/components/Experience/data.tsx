@@ -12,6 +12,7 @@ export const experience = [
         subtitle: 'August/2022 - Present',
         technologies: [
             'TypeScript',
+            'JavaScript',
             'React',
             'Ant Design',
             'React Query',
@@ -35,6 +36,7 @@ export const experience = [
         subtitle: 'February/2022 - August/2022',
         technologies: [
             'TypeScript',
+            'JavaScript',
             'React',
             'Material UI',
             'React Query',

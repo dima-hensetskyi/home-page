@@ -19,7 +19,7 @@ export const ContactsPanel = () => {
                 className="dh-contacts-panel__telegram"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://t.me/+380687279983"
+                href="https://t.me/hens_dima"
             >
                 <BsTelegram />
             </a>
