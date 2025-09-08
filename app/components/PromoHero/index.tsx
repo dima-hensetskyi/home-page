@@ -11,12 +11,11 @@ export const PromoHero = () => {
         <section className="dh-promo-hero">
             <div className="dh-promo-hero__content dh-promo-hero-content">
                 <h4 className="dh-promo-hero-content__subtitle">
-                    Hi, my name is Dima
+                    Hi, I’m Dima
                 </h4>
                 <h3 className="dh-promo-hero-content__title">
-                    I’m a Frontend Developer
-                    <br /> with more than 3 years
-                    <br /> experience
+                    Frontend Developer
+                    <br /> 4+ Years of Experience
                 </h3>
                 <DownloadResumeBtn />
                 <ContactsPanel />
