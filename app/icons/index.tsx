@@ -7,6 +7,8 @@ import { Flowers } from './Flowers';
 import { Plant } from './Plant';
 import { Background } from './Background';
 import { Signature } from './Signature';
+import { Md } from './Md';
+import { SH } from './SH';
 export {
     Epam,
     Cs50,
@@ -17,4 +19,6 @@ export {
     Plant,
     Background,
     Signature,
+    Md,
+    SH,
 };

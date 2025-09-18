@@ -14,7 +14,7 @@ export const educations = [
         icon: <HiArrowCircleUp style={{ color: '#FF6700' }} />,
         name: 'Cursor Education',
         subtitle: 'November/2020 - February/2021',
-        href: 'https://www.cursor.education/',
+        href: 'https://www.facebook.com/education.cursor/',
     },
     {
         title: 'Computer Science and the Art of Programming',
